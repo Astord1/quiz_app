@@ -5,6 +5,7 @@ import { nanoid } from 'nanoid';
 import Question from "../components/Question";
 import Form from "../components/Form";
 import GradientBtn from "../components/GradientBtn";
+import Loader from "../components/Loader";
 
 import useDidMountEffect from "../hooks/useDidMountEffect";
 
@@ -130,7 +131,7 @@ export default function Quiz(){
         }else{
             return(
                 <main className="quiz-container quiz-container--started">
-                    <h1 className = "title">...Loading</h1>
+                    <Loader />
                 </main>
             )
         }
